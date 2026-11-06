@@ -16,10 +16,10 @@ MACOS_MIN=13.3
 
 # nom, dépôt officiel, tag ou branche, commit attendu
 SOURCES=(
-  "ffmpeg https://github.com/FFmpeg/FFmpeg.git n9.0.2 946fcce07b6dcd0331c8cc609192aeff5e1924f8"
+  "ffmpeg https://git.ffmpeg.org/ffmpeg.git n9.0.2 946fcce07b6dcd0331c8cc609192aeff5e1924f8"
   "x264 https://code.videolan.org/videolan/x264.git stable b35605ace3ddf7c1a5d67a2eb553f034aef41d55"
-  "dav1d https://github.com/videolan/dav1d.git 1.5.4 54706fc6bc0cdecab7e9593974a4039cc038fca7"
-  "freetype https://github.com/freetype/freetype.git VER-2-15-0 37515cf56ba3349656049edbed89ffc6f6466f2d"
+  "dav1d https://code.videolan.org/videolan/dav1d.git 1.5.4 54706fc6bc0cdecab7e9593974a4039cc038fca7"
+  "freetype https://gitlab.freedesktop.org/freetype/freetype.git VER-2-15-0 37515cf56ba3349656049edbed89ffc6f6466f2d"
   "fribidi https://github.com/fribidi/fribidi.git v1.0.18 15393e4937aa95bcf865d92143735746aeb654fa"
   "harfbuzz https://github.com/harfbuzz/harfbuzz.git 15.1.0 3df40d9b98d6b32f0e4288d4ecfbb158ddb3a372"
   "libass https://github.com/libass/libass.git 0.17.5 4a05d8127f525943ebf45fdc6497c9e665947f0d"
