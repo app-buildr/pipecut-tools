@@ -3,7 +3,7 @@
 # aucun binaire. Chaque source est figée par son commit, vérifié après le téléchargement. Binaires autonomes :
 # bibliothèques liées en statique, aucune dépendance hors du système, ni à Homebrew ni à MacPorts.
 #
-# Seul ce dont Clipr se sert est compilé : x264 (encodage), dav1d (lecture de l'AV1), libass et ses dépendances
+# Seul ce dont PipeCut se sert est compilé : x264 (encodage), dav1d (lecture de l'AV1), libass et ses dépendances
 # (incrustation des sous-titres). Le reste vient de ffmpeg (décodeurs, AAC) et de macOS (HTTPS, VideoToolbox).
 #
 # Prérequis : Xcode, git, pkg-config, meson et ninja.
@@ -27,7 +27,7 @@ SOURCES=(
 
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 # hors du dossier personnel : les binaires gardent les chemins de leur compilation, jamais de nom de compte
-work="/Users/Shared/clipr-tools-build/ffmpeg-$VERSION"
+work="/Users/Shared/pipecut-tools-build/ffmpeg-$VERSION"
 src="$work/src"
 prefix="$work/prefix"
 out="$root/dist/ffmpeg-$VERSION"
@@ -85,7 +85,7 @@ echo "⚙ ffmpeg"
   cd "$src/ffmpeg"
   ./configure --prefix="$prefix" --arch=arm64 --cc=clang --cxx=clang++ \
     --pkg-config=pkg-config --pkg-config-flags=--static \
-    --extra-version=clipr --extra-cflags="$CFLAGS" --extra-ldflags="$LDFLAGS" --extra-libs="-lc++" \
+    --extra-version=pipecut --extra-cflags="$CFLAGS" --extra-ldflags="$LDFLAGS" --extra-libs="-lc++" \
     --disable-autodetect --disable-debug --disable-doc --disable-ffplay \
     --enable-static --disable-shared --enable-gpl --enable-version3 \
     --enable-zlib --enable-bzlib --enable-iconv --enable-securetransport \
