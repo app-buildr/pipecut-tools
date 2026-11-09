@@ -14,7 +14,7 @@ MACOS_MIN=13.3
 
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 # hors du dossier personnel : le binaire garde les chemins de sa compilation, jamais de nom de compte
-work="/Users/Shared/clipr-tools-build/whisper-$VERSION"
+work="/Users/Shared/pipecut-tools-build/whisper-$VERSION"
 src="$work/whisper.cpp"
 out="$root/dist/whisper-cli-$VERSION"
 mkdir -p "$work" "$out"
