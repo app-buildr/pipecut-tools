@@ -1,0 +1,4 @@
+# Hooks git gérés par lefthook — https://lefthook.dev
+# Installation : brew install lefthook && lefthook install
+# Les hooks propres à une machine vont dans lefthook-local.yml (non versionné).
+min_version: 2.0.0
